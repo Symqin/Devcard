@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Card Generator | Neobrutalism</title>
+  
+  <!-- CDN Links -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind Config Customization -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          boxShadow: {
+            'neo': '8px 8px 0px 0px rgba(0,0,0,1)',
+            'neo-sm': '4px 4px 0px 0px rgba(0,0,0,1)',
+            'neo-hover': '2px 2px 0px 0px rgba(0,0,0,1)',
+          },
+          fontFamily: {
+            sans: ['Space Grotesk', 'sans-serif', 'system-ui'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&display=swap');
+    
+    body {
+      background-image: radial-gradient(#000 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    
+    /* Hide scrollbar for clean neo look */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+      border-left: 2px solid #000;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #000; 
+      border: 2px solid #000;
+    }
+  </style>
+</head>
+<body class="bg-blue-200 min-h-screen text-black font-sans selection:bg-pink-400 selection:text-black p-4 md:p-8">
+  <div id="app" class="max-w-4xl mx-auto pb-10"></div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
