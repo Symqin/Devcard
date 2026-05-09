@@ -18,20 +18,5 @@ Sebuah aplikasi web sederhana (Single Page Application) yang digunakan untuk men
 - **Tailwind CSS (CDN):** 
 - **html-to-image (CDN):** Library eksternal untuk konversi DOM HTML menjadi gambar PNG.
 
-## Struktur Folder
 
-\`\`\`text
-devcard/
-├── index.html            # Entry point HTML utama
-├── README.md             # Dokumentasi proyek
-└── src/
-    ├── app.js            # Entry point JS, menangani navigasi SPA
-    ├── api/
-    │   └── github.js     # Logika Fetch API ke GitHub URL
-    ├── components/
-    │   └── card.js       # Template renderer untuk kartu profil
-    └── pages/
-        ├── landing.js    # Tampilan dan event untuk Landing Page
-        └── main.js       # Tampilan, form, dan logika export untuk Halaman Utama
-\`\`\`
 
